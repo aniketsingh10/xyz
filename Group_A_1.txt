@@ -1,0 +1,15 @@
+1)  sudo su hduser
+2)  Password=student
+3)  cd 
+4)  cd /usr/local/hadoop
+5)  start-dfs.sh
+6)  start-yarn.sh
+7)  jps
+8)  bin/hdfs dfs -mkdir /user786/
+9)  bin/hdfs dfs -put /home/student/Desktop/data /user786/input
+10) bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.jar wordcount /user786/input output786
+11) bin/hdfs dfs -cat output786/*
+12) stop-all.sh
+
+
+Error dfNameNode is in safe mode , unable to to make directory :hadoop dfsadmin -safemode leave
